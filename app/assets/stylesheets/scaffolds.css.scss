@@ -1,9 +1,24 @@
 body {
-  background-color: #fff;
-  color: #333;
+  background-color: #E0E0E0;
+  color: #FF0099;
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px; }
+  
+h1 {
+  font-family: tahoma, arial, helvetica, sans-serif;
+  border-bottom: solid 1px #FF0099;
+  padding-bottom: 10px;
+}
+
+body th {
+  width: 100px;
+  text-align: left;
+}
+
+body table {
+  margin-bottom: 20px;
+}
 
 p, ol, ul, td {
   font-family: verdana, arial, helvetica, sans-serif;
