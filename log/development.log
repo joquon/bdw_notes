@@ -1546,3 +1546,226 @@ Served asset /posts.js - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-02-07 01:02:10 -0700
 Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-02-09 13:40:15 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 200ms (Views: 200.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-02-09 13:40:16 -0700
+Served asset /application.css - 200 OK (22ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-02-09 13:40:17 -0700
+Served asset /home.css - 200 OK (3ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2012-02-09 13:40:17 -0700
+Served asset /posts.css - 200 OK (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-02-09 13:40:17 -0700
+Served asset /scaffolds.css - 200 OK (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-02-09 13:40:17 -0700
+Served asset /jquery.js - 200 OK (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-02-09 13:40:17 -0700
+Served asset /jquery_ujs.js - 200 OK (1ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-02-09 13:40:17 -0700
+Served asset /home.js - 200 OK (1ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2012-02-09 13:40:17 -0700
+Served asset /posts.js - 200 OK (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-02-09 13:40:17 -0700
+Served asset /application.js - 200 OK (23ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2012-02-09 13:40:25 -0700
+
+SyntaxError (/Users/jquon/Dev/bdw/adv_tech/bdw_notes/app/models/post.rb:4: syntax error, unexpected ',', expecting keyword_end
+	    :content,	:presence => true,
+	             ^
+/Users/jquon/Dev/bdw/adv_tech/bdw_notes/app/models/post.rb:4: Can't assign to true
+/Users/jquon/Dev/bdw/adv_tech/bdw_notes/app/models/post.rb:5: syntax error, unexpected tASSOC, expecting tCOLON2 or '[' or '.'
+			:length => { :minimum => 5 :maximum => 400 }
+			          ^
+/Users/jquon/Dev/bdw/adv_tech/bdw_notes/app/models/post.rb:5: syntax error, unexpected ':', expecting '}'
+			:length => { :minimum => 5 :maximum => 400 }
+			                            ^):
+  app/controllers/posts_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/jquon/.rbenv/versions/1.9.2-p290/lib/ruby/gems/1.9.1/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.3ms)
+  Rendered /Users/jquon/.rbenv/versions/1.9.2-p290/lib/ruby/gems/1.9.1/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/jquon/.rbenv/versions/1.9.2-p290/lib/ruby/gems/1.9.1/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.9ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2012-02-09 13:40:29 -0700
+
+NoMethodError (undefined method `key?' for nil:NilClass):
+  actionpack (3.2.1) lib/action_controller/metal/hide_actions.rb:36:in `visible_action?'
+  actionpack (3.2.1) lib/action_controller/metal/hide_actions.rb:18:in `method_for_action'
+  actionpack (3.2.1) lib/action_controller/metal/implicit_render.rb:14:in `method_for_action'
+  actionpack (3.2.1) lib/action_controller/metal/compatibility.rb:61:in `method_for_action'
+  actionpack (3.2.1) lib/abstract_controller/base.rb:115:in `process'
+  actionpack (3.2.1) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.1) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.1) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.1) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.1) lib/action_dispatch/routing/route_set.rb:66:in `call'
+  actionpack (3.2.1) lib/action_dispatch/routing/route_set.rb:66:in `dispatch'
+  actionpack (3.2.1) lib/action_dispatch/routing/route_set.rb:30:in `call'
+  journey (1.0.1) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.1) lib/journey/router.rb:56:in `each'
+  journey (1.0.1) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.1) lib/action_dispatch/routing/route_set.rb:589:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/cookies.rb:338:in `call'
+  activerecord (3.2.1) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:443:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:405:in `_run__1522701754668380083__call__822606062140286989__callbacks'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.1) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.1) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.1) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/static.rb:53:in `call'
+  railties (3.2.1) lib/rails/engine.rb:479:in `call'
+  railties (3.2.1) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.1) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/jquon/.rbenv/versions/1.9.2-p290/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /Users/jquon/.rbenv/versions/1.9.2-p290/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /Users/jquon/.rbenv/versions/1.9.2-p290/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+
+  Rendered /Users/jquon/.rbenv/versions/1.9.2-p290/lib/ruby/gems/1.9.1/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /Users/jquon/.rbenv/versions/1.9.2-p290/lib/ruby/gems/1.9.1/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/jquon/.rbenv/versions/1.9.2-p290/lib/ruby/gems/1.9.1/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (4.2ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2012-02-09 14:10:33 -0700
+
+SyntaxError (/Users/jquon/Dev/bdw/adv_tech/bdw_notes/app/models/post.rb:5: syntax error, unexpected ':', expecting '}'
+			                :length => { :minimum => 5 :maximum => 400 }
+			                                            ^):
+  app/controllers/posts_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/jquon/.rbenv/versions/1.9.2-p290/lib/ruby/gems/1.9.1/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.4ms)
+  Rendered /Users/jquon/.rbenv/versions/1.9.2-p290/lib/ruby/gems/1.9.1/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.4ms)
+  Rendered /Users/jquon/.rbenv/versions/1.9.2-p290/lib/ruby/gems/1.9.1/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (21.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-02-09 14:13:18 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 48ms (Views: 47.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-02-09 14:13:19 -0700
+Served asset /application.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-02-09 14:13:19 -0700
+Served asset /home.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2012-02-09 14:13:19 -0700
+Served asset /posts.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-02-09 14:13:19 -0700
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-02-09 14:13:19 -0700
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-02-09 14:13:19 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-02-09 14:13:19 -0700
+Served asset /home.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2012-02-09 14:13:19 -0700
+Served asset /posts.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-02-09 14:13:19 -0700
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2012-02-09 14:13:21 -0700
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (11.8ms)[0m  [1mSELECT "posts".* FROM "posts" [0m
+  Rendered posts/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 32ms (Views: 19.4ms | ActiveRecord: 11.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-02-09 14:13:21 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-02-09 14:13:21 -0700
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-02-09 14:13:21 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-02-09 14:13:21 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2012-02-09 14:13:21 -0700
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-02-09 14:13:21 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-02-09 14:13:21 -0700
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2012-02-09 14:13:21 -0700
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-02-09 14:13:21 -0700
+Served asset /application.js - 304 Not Modified (0ms)
