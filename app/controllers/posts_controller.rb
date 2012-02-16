@@ -2,6 +2,7 @@ class PostsController < ApplicationController
   # GET /posts
   # GET /posts.json
   def index
+    #index method relates to index.html.erb file in views/posts folder
     @posts = Post.all
 
     respond_to do |format|

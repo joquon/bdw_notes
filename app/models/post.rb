@@ -3,4 +3,8 @@ class Post < ActiveRecord::Base
 			                :length => { :minimum => 5 }
 	validates :content, :presence => true,
 			                :length => { :minimum => 5 }
+
+# def super_title
+  #"#{{title} is super!}"
+  #end
 end
