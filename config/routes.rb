@@ -1,7 +1,7 @@
 BdwNotes::Application.routes.draw do
-  resources :categories
-
-  resources :posts
+    resources :categories do
+  end
+    resources :posts
 
   get "home/index"
 

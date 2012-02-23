@@ -1,8 +1,15 @@
 class PostsController < ApplicationController
+  before_filter :authenticate
+  
+  def authenticate
+    authenticate_or_request_with_http_basic do |username, password|
+      username == "foo" && password == "bar"
+    end
+  end
   # GET /posts
   # GET /posts.json
   def index
-    #index method relates to index.html.erb file in views/posts folder
+  #index method relates to index.html.erb file in views/posts folder
     @posts = Post.all
 
     respond_to do |format|
@@ -15,6 +22,7 @@ class PostsController < ApplicationController
   # GET /posts/1.json
   def show
     @post = Post.find(params[:id])
+    @categories = Category.all.collect {|t| [t.name, t.id] }
 
     respond_to do |format|
       format.html # show.html.erb
@@ -26,7 +34,8 @@ class PostsController < ApplicationController
   # GET /posts/new.json
   def new
     @post = Post.new
-
+    @categories = Category.all.collect {|t| [t.name, t.id] }
+    
     respond_to do |format|
       format.html # new.html.erb
       format.json { render json: @post }
@@ -36,12 +45,15 @@ class PostsController < ApplicationController
   # GET /posts/1/edit
   def edit
     @post = Post.find(params[:id])
+    @categories = Category.all.collect {|t| [t.name, t.id] }
+    
   end
 
   # POST /posts
   # POST /posts.json
   def create
     @post = Post.new(params[:post])
+    @categories = Category.all.collect {|t| [t.name, t.id] }
 
     respond_to do |format|
       if @post.save
@@ -58,6 +70,7 @@ class PostsController < ApplicationController
   # PUT /posts/1.json
   def update
     @post = Post.find(params[:id])
+    @categories = Category.all.collect {|t| [t.name, t.id] }
 
     respond_to do |format|
       if @post.update_attributes(params[:post])
@@ -82,3 +95,4 @@ class PostsController < ApplicationController
     end
   end
 end
+
